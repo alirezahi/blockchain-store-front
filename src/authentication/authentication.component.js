@@ -12,10 +12,10 @@ const AuthenticationlDialog = ({open, handleClose}) => {
     const Form = (formType === SIGNUP_TYPE ? SignUpForm : LoginForm)
 
     return (
-        <Dialog open={open} onClose={handleClose}>
+        <Dialog open={open}>
             <Paper>
                 <Form handleClose={handleClose}/>
-                <span onClick={changeFormType}>{formType === SIGNUP_TYPE ? 'Sign Up' : 'Login'}</span>
+                <span onClick={changeFormType}>{formType === SIGNUP_TYPE ? 'Login' : 'Sign Up'}</span>
             </Paper>
         </Dialog>
     )

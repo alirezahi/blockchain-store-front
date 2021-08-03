@@ -27,12 +27,12 @@ const LoginForm = ({handleClose}) => {
     const classes = useStyles();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const {setToken} = useContext(AuthenticationContext);
+    const {setAuthToken} = useContext(AuthenticationContext);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         const token = await authenticationService.signup(email, password)
-        setToken(token)
+        setAuthToken(token)
         handleClose();
     };
 
@@ -55,9 +55,6 @@ const LoginForm = ({handleClose}) => {
                 onChange={e => setPassword(e.target.value)}
             />
             <div>
-                <Button variant="contained" onClick={handleClose}>
-                    Cancel
-                </Button>
                 <Button type="submit" variant="contained" color="primary">
                     Signup
                 </Button>

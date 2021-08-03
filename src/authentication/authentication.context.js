@@ -6,7 +6,7 @@ export const authentication = {
 
 export const AuthenticationContext = React.createContext({
         ...authentication,
-        setToken: () => {
+        setAuthToken: () => {
         }
     }
 );
