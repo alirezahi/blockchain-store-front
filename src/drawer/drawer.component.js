@@ -11,45 +11,51 @@ const DrawerComponent = (props) => {
         <Drawer anchor={'left'} open={props.open} onClose={onClose}>
             <List>
                 <ListItem>
-                    <Link to={'/set-parameters'}>
+                    <Link to={'/create-product'}>
                             <span>
-                                set parameters
+                                Create Product
+                            </span>
+                    </Link>
+
+                    <Link to={'/auth-product'}>
+                            <span>
+                                Auth Product
                             </span>
                     </Link>
                 </ListItem>
 
-                <ListItem>
-                    <Link to={'/real-time-monitoring'}>
-                            <span>
-                                real time monitoring
-                            </span>
-                    </Link>
-                </ListItem>
+                {/*<ListItem>*/}
+                {/*    <Link to={'/real-time-monitoring'}>*/}
+                {/*            <span>*/}
+                {/*                real time monitoring*/}
+                {/*            </span>*/}
+                {/*    </Link>*/}
+                {/*</ListItem>*/}
 
 
-                <ListItem>
-                    <Link to={'/pvs-logs'}>
-                            <span>
-                                system pvs logs
-                            </span>
-                    </Link>
-                </ListItem>
+                {/*<ListItem>*/}
+                {/*    <Link to={'/pvs-logs'}>*/}
+                {/*            <span>*/}
+                {/*                system pvs logs*/}
+                {/*            </span>*/}
+                {/*    </Link>*/}
+                {/*</ListItem>*/}
 
-                <ListItem>
-                    <Link to={'/pressures-logs'}>
-                            <span>
-                                pressures logs
-                            </span>
-                    </Link>
-                </ListItem>
+                {/*<ListItem>*/}
+                {/*    <Link to={'/pressures-logs'}>*/}
+                {/*            <span>*/}
+                {/*                pressures logs*/}
+                {/*            </span>*/}
+                {/*    </Link>*/}
+                {/*</ListItem>*/}
 
-                <ListItem>
-                    <Link to={'/thermometer-logs'}>
-                            <span>
-                                thermometer logs
-                            </span>
-                    </Link>
-                </ListItem>
+                {/*<ListItem>*/}
+                {/*    <Link to={'/thermometer-logs'}>*/}
+                {/*            <span>*/}
+                {/*                thermometer logs*/}
+                {/*            </span>*/}
+                {/*    </Link>*/}
+                {/*</ListItem>*/}
             </List>
         </Drawer>
     )
